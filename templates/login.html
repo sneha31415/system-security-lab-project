@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login - WAF Security Demo</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<main class="container">
+		<h1>Login</h1>
+
+		{% if error %}
+			<p style="color: red;">{{ error }}</p>
+		{% endif %}
+
+		<form method="POST" action="/login">
+			<label for="username">Username</label>
+			<input id="username" name="username" type="text" required>
+
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" required>
+
+			<button type="submit">Login</button>
+		</form>
+
+		<p><a href="/comments">Go to Comments</a></p>
+	</main>
+</body>
+</html>
