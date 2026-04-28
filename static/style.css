@@ -1,118 +1,118 @@
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background: #f7f7f7;
-	color: #222;
-	line-height: 1.6;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
 }
 
 .container {
-	max-width: 700px;
-	margin: 0 auto;
-	padding: 2rem;
-	background: #fff;
-	min-height: 100vh;
-	box-sizing: border-box;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
-	margin-top: 0;
-	line-height: 1.2;
+  margin-top: 0;
+  line-height: 1.2;
 }
 
 form {
-	margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 label {
-	display: block;
-	margin: 1rem 0 0.35rem;
-	font-weight: 600;
+  display: block;
+  margin: 1rem 0 0.35rem;
+  font-weight: 600;
 }
 
 input,
 textarea {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0.75rem;
-	border: 1px solid #ccc;
-	border-radius: 6px;
-	font: inherit;
-	background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
 }
 
 textarea {
-	resize: vertical;
-	min-height: 120px;
+  resize: vertical;
+  min-height: 120px;
 }
 
 button,
 .btn,
 a.btn {
-	display: inline-block;
-	margin-top: 1rem;
-	padding: 0.75rem 1.1rem;
-	border: 0;
-	border-radius: 6px;
-	background: #333;
-	color: #fff;
-	text-decoration: none;
-	font: inherit;
-	cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
 }
 
 button:hover,
 .btn:hover,
 a.btn:hover {
-	background: #111;
+  background: #111;
 }
 
 .error {
-	color: #b00020;
-	border-left: 4px solid #b00020;
-	padding: 0.75rem 1rem;
-	background: #fff5f7;
-	margin: 1rem 0;
+  color: #b00020;
+  border-left: 4px solid #b00020;
+  padding: 0.75rem 1rem;
+  background: #fff5f7;
+  margin: 1rem 0;
 }
 
 .blocked-page {
-	border: 2px solid #b00020;
-	padding: 1.5rem;
-	background: #fffafa;
+  border: 2px solid #b00020;
+  padding: 1.5rem;
+  background: #fffafa;
 }
 
 .blocked-page h1 {
-	color: #b00020;
+  color: #b00020;
 }
 
 .comment-box,
 .comment {
-	background: #f2f2f2;
-	padding: 1rem;
-	border-radius: 6px;
-	margin-bottom: 1rem;
+  background: #f2f2f2;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 nav,
 .actions {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.75rem;
-	margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 nav a,
 .actions a,
 .actions .btn {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a {
-	color: #222;
+  color: #222;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }

@@ -1,36 +1,36 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Comments - WAF Security Demo</title>
-	<link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-	<main class="container">
-		<h1>Comments</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments - WAF Security Demo</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Comments</h1>
 
-		<form method="POST" action="/comments">
-			<label for="username">Username</label>
-			<input id="username" name="username" type="text" required>
+      <form method="POST" action="/comments">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" required />
 
-			<label for="content">Content</label>
-			<textarea id="content" name="content" rows="4" required></textarea>
+        <label for="content">Content</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
 
-			<button type="submit">Post Comment</button>
-		</form>
+        <button type="submit">Post Comment</button>
+      </form>
 
-		<h2>Public Comments (Unfiltered)</h2>
-		<section>
-			{% for comment in comments %}
-				<article class="comment">
-					<p><strong>{{ comment[1] }}</strong> at {{ comment[3] }}</p>
-					<div>{{ comment[2] | safe }}</div>
-				</article>
-			{% else %}
-				<p>No comments yet.</p>
-			{% endfor %}
-		</section>
-	</main>
-</body>
+      <h2>Public Comments (Unfiltered)</h2>
+      <section>
+        {% for comment in comments %}
+        <article class="comment">
+          <p><strong>{{ comment[1] }}</strong> at {{ comment[3] }}</p>
+          <div>{{ comment[2] | safe }}</div>
+        </article>
+        {% else %}
+        <p>No comments yet.</p>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
 </html>
